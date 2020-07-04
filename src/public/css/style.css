@@ -1,0 +1,77 @@
+body{
+	background: #F1F3F5;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+.columna01{
+	background: red;
+	color: #fff;
+}
+
+.columna02{
+	background: blue;
+	color: #fff;
+}
+
+.columna03{
+	background: green;
+	color: #fff;
+}
+
+.borderRow{
+	border-bottom: 2px dotted #158cba;
+	padding-bottom: 5px;
+}
+
+.btnMenu{
+	border: 0;
+    border-radius: 50px;
+	color: #158cba;
+	font-size: 17px;
+}
+
+.btnMenu:hover{
+	border: 1px solid;
+	box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.75);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.75);
+}
+
+.card:hover{
+	border: 1px solid;
+	box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.75);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.75);
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(119, 119, 119, 0.75);
+}
+
+.dropdown-menu a{
+	color: #158cba;
+}
+
+.dropdown-menu a:hover{
+	background: #158cba;
+	color:#fff;
+}
+
+.messageAlert{
+	font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.marcoTituloVtn{
+	padding: 5px;
+    /* border-left: 5px solid; */
+    margin-left: 5px;
+    border-bottom: 1px dotted;
+    width: 96%;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.btnBack{
+	font-size: 30px;
+}
