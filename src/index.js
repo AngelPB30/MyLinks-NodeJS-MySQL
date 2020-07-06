@@ -46,6 +46,9 @@ app.use(passport.session());
 app.use((req, res, next) => {
 	app.locals.success = req.flash('success');
 	app.locals.message = req.flash('message');
+	app.locals.users = req.user;
+	app.locals.anio = new Date().getFullYear();
+	app.locals.autor = 'Angel Plaza Bustamante';
 	next();
 });
 

@@ -8,13 +8,12 @@ passport.use('local.signin', new localStrategy({
 	passwordField: 'password',
 	passReqToCallback: true
 }, async(req, username, password, done) =>{
-	console.log(`${username} - ${password}`)
-	console.log(req.body)
-	//if(username !== '' && password !== ''){console.log(`${username} - ${password}`)}else{console.log(`campos vacios`)}
-	const rows = await pool.query('SELECT * FROM mstuser WHERE username = ?', [username]);
+	// console.log(`username: ${username} - password: ${password}`)
+	// console.log(req.body)	
+	const rows = await pool.query('SELECT * FROM mstuser WHERE username = ?', [username]);	
 	if(rows.length > 0){
 		const user = rows[0];
-		const validPassword = await helpers.matchPassword(password, user.password )
+		const validPassword = await helpers.matchPassword(password, user.password);
 		if(validPassword){
 			done(null, user, req.flash('success','Welcome' + user.username));
 		}else{

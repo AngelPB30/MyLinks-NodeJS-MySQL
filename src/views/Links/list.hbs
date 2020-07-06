@@ -5,7 +5,7 @@
 	</div>
 	{{>message}}
 	<div class="row ">
-		{{#each links}} 
+		{{#each links}}
 		<div class="col-md-3 text-center animate__animated animate__bounceIn">
 			<div class="card m-1">
 				<div class="card-body">
@@ -28,7 +28,8 @@
 										to site</a>
 									<a class="dropdown-item" href="/links/edit/{{id}}"><i class="fas fa-edit"></i>
 										Edit</a>
-									<a class="dropdown-item" href="/links/delete/{{id}}"><i class="fas fa-trash-alt"></i>
+									<a class="dropdown-item" href="/links/delete/{{id}}"><i
+											class="fas fa-trash-alt"></i>
 										Delete</a>
 								</div>
 							</div>
@@ -46,7 +47,7 @@
 			<div class="card">
 				<div class="card-body text-center">
 					<h4>The are not Links saved yet!</h4>
-					<a href="/web/add" class="btn btn-success">Create One!</a>
+					<a href="/links/new" class="btn btn-success">Create One!</a>
 				</div>
 			</div>
 		</div>
